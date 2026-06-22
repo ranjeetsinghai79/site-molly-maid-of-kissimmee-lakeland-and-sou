@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Molly Maid of Kissimmee, Lakeland, and South Orlando",
+    tagline: "Sparkling Homes, Happy Lives Always",
+    phone: "(407) 603-3463",
+    phoneHref: "tel:+14076033463",
+    email: "info@mollymaid.com",
+    address: "123 Main St",
+    city: "Kissimmee",
+    serviceAreas: ["Kissimmee", "Lakeland", "South Orlando", "St. Cloud"],
+    license: "Licensed & Insured",
+    since: "1984",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ember",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "Residential Cleaning", desc: "Expert cleaning for houses, apartments, and condos, ensuring a spotless and comfortable living space.", urgent: false },
+    { icon: "clock", title: "Recurring Cleaning", desc: "Maintain a consistently clean home with our flexible weekly, bi-weekly, or monthly cleaning schedules.", urgent: false },
+    { icon: "sparkles", title: "One Time Cleaning", desc: "Perfect for special occasions or a deep clean, our one-time service leaves your home sparkling.", urgent: false },
+    { icon: "truck", title: "Move-In/Move-Out Cleaning", desc: "Thorough cleaning for empty homes, making moving less stressful and ensuring a fresh start.", urgent: false },
+    { icon: "heart", title: "Eco-Friendly Cleaning", desc: "We use environmentally safe products and methods to protect your family and the planet.", urgent: false },
+    { icon: "briefcase", title: "Light Commercial Cleaning", desc: "Professional cleaning services for small businesses, offices, and commercial spaces.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah J.", location: "Kissimmee", stars: 5, text: "Molly Maid did an incredible job with our recurring cleaning service! They've been coming bi-weekly for the past six months, and our home has never felt so consistently clean. The team is always punctual, professional, and pays attention to every detail. Worth every penny for the peace of mind!" },
+    { name: "David L.", location: "Lakeland", stars: 5, text: "We hired Molly Maid for a one-time deep clean before a family gathering, and they exceeded all expectations. The house looked and smelled amazing! They tackled areas I usually miss, and the kitchen and bathrooms were spotless. The price was fair for the quality of work. Highly recommend!" },
+    { name: "Emily R.", location: "South Orlando", stars: 5, text: "Moving out is stressful enough, but Molly Maid made the cleaning process effortless. Their move-out cleaning service was thorough and efficient. Our landlord was impressed, and we got our full deposit back without any issues. The team was friendly and worked quickly. Fantastic service!" }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Locally Owned & Operated", "Neighborly Done Right Promise®", "Free Quote in Minutes", "Affordable Cleaning", "Background-Checked Staff", "Eco-Friendly Options"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 10000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 35, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "shield-check", title: "Trusted Professionals", desc: "Our cleaners are thoroughly vetted, trained, and insured for your peace of mind." },
+    { icon: "thumbs-up", title: "Satisfaction Guaranteed", desc: "We stand by our Neighborly Done Right Promise® – if you're not happy, we'll make it right." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "Choose from one-time, weekly, bi-weekly, or monthly cleaning services to fit your lifestyle." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Get a free, no-obligation quote with clear, upfront pricing and no hidden fees." },
+    { icon: "heart", title: "Eco-Friendly Options", desc: "We offer green cleaning solutions to protect your family, pets, and the environment." },
+    { icon: "home", title: "Personalized Service", desc: "We tailor our cleaning plans to your specific needs and preferences for a truly custom clean." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["Residential Cleaning", "Recurring Cleaning", "One Time Cleaning", "Move-In/Move-Out Cleaning", "Eco-Friendly Cleaning", "Light Commercial Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
